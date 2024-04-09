@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/praveshsuthar9/restaurant-web/static/css/main.091e8012.css",
-    "main.js": "/praveshsuthar9/restaurant-web/static/js/main.d1e8e430.js",
-    "static/js/453.c83afa9f.chunk.js": "/praveshsuthar9/restaurant-web/static/js/453.c83afa9f.chunk.js",
+    "main.js": "/praveshsuthar9/restaurant-web/static/js/main.5af608bf.js",
+    "static/js/453.90c1dead.chunk.js": "/praveshsuthar9/restaurant-web/static/js/453.90c1dead.chunk.js",
     "static/media/product-img-2.png": "/praveshsuthar9/restaurant-web/static/media/product-img-2.80abee240885f3eabce3.png",
     "static/media/product-img-1.png": "/praveshsuthar9/restaurant-web/static/media/product-img-1.ca74090c36866e811ed8.png",
     "static/media/review-img.png": "/praveshsuthar9/restaurant-web/static/media/review-img.b105fe43e8bf62808d9f.png",
@@ -24,11 +24,11 @@
     "static/media/menu-6.png": "/praveshsuthar9/restaurant-web/static/media/menu-6.1e627e81ea9cffd96843.png",
     "index.html": "/praveshsuthar9/restaurant-web/index.html",
     "main.091e8012.css.map": "/praveshsuthar9/restaurant-web/static/css/main.091e8012.css.map",
-    "main.d1e8e430.js.map": "/praveshsuthar9/restaurant-web/static/js/main.d1e8e430.js.map",
-    "453.c83afa9f.chunk.js.map": "/praveshsuthar9/restaurant-web/static/js/453.c83afa9f.chunk.js.map"
+    "main.5af608bf.js.map": "/praveshsuthar9/restaurant-web/static/js/main.5af608bf.js.map",
+    "453.90c1dead.chunk.js.map": "/praveshsuthar9/restaurant-web/static/js/453.90c1dead.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.091e8012.css",
-    "static/js/main.d1e8e430.js"
+    "static/js/main.5af608bf.js"
   ]
 }
