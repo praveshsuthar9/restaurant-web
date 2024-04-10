@@ -1,0 +1,643 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* Header-start */
+
+.header-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  z-index: 999;
+  position: relative;
+}
+
+.logo img {
+  width: 70px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  padding: 5px;
+  margin-left: 15px;
+  transition: all 0.3s linear;
+}
+
+nav ul li a:hover {
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search span i {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search span i:hover {
+  color: orange;
+}
+
+.menubar {
+  display: none;
+}
+
+.search-form {
+  display: none;
+  position: absolute;
+  top: 110px;
+  left: 38%;
+  width: 50rem;
+  height: 5rem;
+  transition: all 0.3s ease-in;
+}
+
+.active.search-form {
+  display: block;
+}
+
+.search-form input {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+
+.search-form input::placeholder {
+  color: #222;
+}
+
+.cart-container {
+  display: none;
+  position: absolute;
+  top: 110px;
+  right: -100%;
+  background-color: #fff;
+  height: 100vh;
+  width: 30%;
+  padding: 20px;
+}
+
+.active.cart-container {
+  display: block;
+  right: 0%;
+}
+
+.cart {
+  display: flex;
+
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.cart p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cart p span {
+  color: orange;
+}
+
+.cart span i {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cart img {
+  width: 110px;
+  object-fit: cover;
+}
+
+.check-out-btn button {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: orange;
+  color: #fff;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.3s linear;
+}
+
+.check-out-btn button:hover {
+  border: 1px solid orange;
+  background-color: transparent;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+hr {
+  border: 1px solid orange;
+}
+section {
+  padding: 50px 0;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+h3 span {
+  color: orange;
+}
+
+/* -------------------------------------Home-Start-------------------------------------- */
+.home {
+  height: 90vh;
+  background-image: url(./images/home-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-container h1 {
+  padding-top: 80px;
+  font-size: 80px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.home-container h1 span {
+  color: orange;
+}
+
+.home-container p {
+  padding-top: 15px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.home-container .home-btn button {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  background-color: orange;
+  border: none;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.home-container .home-btn button:hover {
+  letter-spacing: 2px;
+  width: 215px;
+}
+
+/* -------------------------------------Home-End-------------------------------------- */
+
+/* ------------About-start---------- */
+
+.about-container {
+  background-color: #13131a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-img {
+  width: 50%;
+}
+
+.about-img img {
+  width: 100%;
+  height: 500px;
+}
+
+.about-content {
+  width: 50%;
+}
+
+.about-content h4 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.about-content p {
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 28px;
+}
+
+.about-btn button {
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: orange;
+  color: #fff;
+  padding: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s linear;
+}
+
+.about-btn button:hover {
+  background-color: transparent;
+  border: 1px solid orange;
+}
+
+/* ---------About-end---------------- */
+
+/* --------------Menu-start------------------------ */
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu-in {
+  margin-top: 15px;
+  width: 300px;
+  height: 340px;
+  border: 1px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s linear;
+}
+
+.menu-in:hover {
+  background-color: rgb(116, 85, 28);
+}
+
+.menu-in img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.menu-in h6 {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.menu-in p {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.menu-in button {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background-color: orange;
+  margin-top: 30px;
+}
+/* --------------Menu-end------------------------ */
+
+/* ------------------Product-start-------------------------------- */
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid orange;
+  width: 100%;
+  min-height: 450px;
+  padding: 20px;
+}
+
+.p-icon span {
+  border: 1px solid orange;
+  margin-left: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.p-icon span i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.p-icon span:hover {
+  background-color: orange;
+}
+
+.product-in img {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-in p {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.p-star span i {
+  color: orange;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* ------------------Product-End-------------------------------- */
+
+/* --------------------Review-Start---------------------------------- */
+
+.review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.review-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  border: 1px solid orange;
+  padding: 20px;
+}
+
+.review-in span.qoute i {
+  font-size: 60px;
+  color: orange;
+}
+
+.review-in p {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  line-height: 28px;
+}
+
+.review-in img {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.review-in h4 {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* --------------------Review-Start---------------------------------- */
+
+/* ------------------------------Contact-start-------------------------------- */
+
+.contact-container {
+  display: flex;
+  background-color: #13131a;
+}
+
+.contact-map {
+  width: 50%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.contact-form {
+  width: 50%;
+  padding: 0 20px;
+}
+.contact-form h4 {
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.from-input p {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid orange;
+}
+
+.from-input p i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.from-input p input {
+  width: 100%;
+
+  margin-left: 25px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-btn button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background-color: orange;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.form-btn button:hover {
+  background-color: transparent;
+  border: 1px solid orange;
+}
+/* ------------------------------Contact-End-------------------------------- */
+
+/* -----------------------Blog-Start------------------------------------ */
+
+.blog-container {
+  display: flex;
+  gap: 20px;
+}
+
+.blog {
+  width: 100%;
+  border: 1px solid orange;
+  overflow: hidden;
+}
+
+.blog:hover img {
+  transform: scale(1.1);
+}
+
+.blog img {
+  width: 100%;
+  transition: all 0.3s linear;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h4 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.blog-content p {
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 30px;
+}
+
+.blog-btn button {
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: orange;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  transition: all 0.3s linear;
+}
+
+.blog-btn button:hover {
+  background-color: transparent;
+  border: 1px solid orange;
+}
+
+/* ----------------------------Footer-Start-------------------------------------- */
+
+.footer {
+  background-color: #13131a;
+}
+
+.footer-container {
+  width: 100%;
+  height: 200px;
+  padding: 50px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon a {
+  margin-left: 20px;
+  border: 2px solid orange;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.footer-icon a i {
+  font-size: 25px;
+  color: #fff;
+}
+
+.footer-icon a:hover {
+  background-color: orange;
+}
+
+.footer-btn button {
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid orange;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.footer-btn button:hover {
+  background-color: orange;
+}
+
+/* ----------------------------Footer-End-------------------------------------- */
